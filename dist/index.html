@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="../main.css">
+  </head>
+  <body>
+    <!-- nav partial -->
+    <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ASSEMBLE</a>
+      <ul class="nav">
+        <li class="active">
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="markdown.html">Markdown</a>
+        </li>
+        <li>
+          <a href="examples.html">Examples</a>
+        </li>
+      </ul>
+      <ul class="nav pull-right">
+        <li> <a href="https://github.com/assemble/assemble-boilerplates">More Examples</a> </li>
+        <li> <a href="https://github.com/assemble/assemble/">Visit Assemble</a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container">
+      <!-- body partial, used for adding pages to layout -->
+      
+
+<h1 id="boilerplate-site-build-status-https-travis-ci-org-assemble-boilerplate-site-png-https-travis-ci-org-assemble-boilerplate-site-">boilerplate-site  <a href="https://travis-ci.org/assemble/boilerplate-site"><img src="https://travis-ci.org/assemble/boilerplate-site.png" alt="Build Status"></a></h1>
+<blockquote>
+<p>Boilerplate for generating a basic static site with Assemble.</p>
+</blockquote>
+<h3 id="notice-this-boilerplate-is-being-refactored">NOTICE: THIS BOILERPLATE IS BEING REFACTORED</h3>
+<p>You may find outdated information or examples in this project. While we&#39;re refactoring, you might be more interested in <a href="http://github.com/assemble/boilerplate-bootstrap">boilerplate-bootstrap</a> in the meantime.</p>
+<h2 id="getting-started">Getting Started</h2>
+<ul>
+<li><strong><a href="https://github.com/assemble/boilerplate-site/archive/master.zip">Download this project</a></strong> and unzip it into a new folder.</li>
+<li>In the project folder, run <code>npm install</code> to install <a href="https://github.com/assemble/assemble/">Assemble</a>, <a href="http://gruntjs.com/">Grunt</a> and any other dependencies.</li>
+<li>Once the dependencies are installed you may run <code>grunt assemble</code> to build the example project.</li>
+</ul>
+<p>If you haven&#39;t used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a>, as well as install and use Grunt plugins.</p>
+<h2 id="the-assemble-task">The &quot;assemble&quot; task</h2>
+<h3 id="overview">Overview</h3>
+<p>In the project&#39;s Gruntfile, the example <code>assemble</code> task is pre-loaded with paths and options following standard Grunt.js conventions:</p>
+<pre><code class="language-js">grunt.initConfig({
+  <span class="comment">// The "assemble" task</span>
+  assemble: {
+    <span class="comment">// Task-level options.</span>
+    options: {
+      flatten: <span class="literal">true</span>,
+      assets: <span class="string">'dist/assets'</span>,
+      layout: <span class="string">'templates/layouts/default.hbs'</span>,
+      partials: <span class="string">'templates/partials/*.hbs'</span>,
+      data: <span class="string">'src/data/*.{json,yml}'</span>
+    },
+    <span class="comment">// Templates to build into pages</span>
+    pages: {
+      files: {
+        <span class="string">'dist/'</span>: [<span class="string">'templates/pages/*.hbs'</span>]
+      }
+    }
+  }
+})</code></pre>
+<h2 id="boilerplate-author">Boilerplate Author</h2>
+<p><strong>Jon Schlinkert</strong></p>
+<ul>
+<li><a href="https://github.com/jonschlinkert">github/jonschlinkert</a></li>
+<li><a href="http://twitter.com/jonschlinkert">twitter/jonschlinkert</a></li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Use <a href="https://github.com/assemble/assemble/">Assemble</a> to build and maintain your gh-pages, blog or documentation. Lint and test your code using <a href="http://gruntjs.com/">Grunt</a>.</p>
+
+
+
+
+
+
+
+      <script src="assets/highlight.js"></script>
+    </div>
+  </body>
+</html>
