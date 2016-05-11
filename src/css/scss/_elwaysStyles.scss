@@ -14,17 +14,16 @@ body {
 	text-transform: uppercase;
 	height: 110px;
 	box-shadow: -6px 6px 30px rgba(0, 0, 0, 0.3);
-	.h1 {
+	.nav-content {
 		color: #f0553b;
 		font-size: 24px;
 		letter-spacing: 5px;
-		padding-top: 25px;
+		padding-top: 40px;
+		display: block;
+		font-family: Helvetica, Arial, sans-serif;
 	}
 	sup {
 		padding-top: 10px;
-	}
-	img {
-		float: left;
 	}
 }
 
@@ -37,6 +36,9 @@ header.hero-container {
 		width: 100%;
 		max-width: 80%;
 		margin: 0 auto 10px;
+		img {
+			width: 100%;
+		}
 	}
 	.hero-content {
 		color: #f0553b;
@@ -45,6 +47,8 @@ header.hero-container {
 		line-height: 22px;
 		text-align: center;
 		letter-spacing: 2px;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: 200;
 	}
 	hr.tnt-hr {
 		border: 0;
@@ -101,6 +105,7 @@ header.hero-container {
 				font-family:"futura-pt-condensed";
 				font-weight: 700;
 				color: #a6a4a4;
+				margin-right: 15px;
 			}
 			.bandName {
 				font-family: "futura-pt-condensed";
@@ -145,6 +150,86 @@ header.hero-container {
 				display: inline-block;
 				margin: 20px;
 			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.nav, .navbar {
+		.nav-content {
+			font-size: 18px;
+			letter-spacing: 3px;
+		}
+	}
+}
+
+@media (max-width: 630px) {
+	.nav, .navbar {
+		.nav-content {
+			display: none !important;
+		}
+	}
+	.nav, .navbar {
+		.navbar-brand {
+			clear: both;
+			width: 100%;
+			img {
+				width: 120px;
+				margin: 0 auto 10px;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 600px) {
+	.main-content {
+		.content {
+			border-left: 0;
+			border-right: 0;
+		}
+	}
+}
+
+@media (max-width: 480px){
+	.main-content {
+		margin-top: -10px;
+		.content {
+			width: 100%;
+		}
+		.content-block {
+			h1 {
+				font-size: 50px;
+				span {
+					display: block;
+					text-align: center;
+				}
+				.bandDate {
+					margin-right: 0;
+				}
+				.bandName {
+					font-size: 45px;
+				}
+			}
+		}
+		.gradient {
+			display:none;
+		}
+	}
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	header.hero-container {
+		box-shadow: inset 0px -70px 85px -40px #FFF;
+		.hero-content {
+			font-size: 12px;
 		}
 	}
 }

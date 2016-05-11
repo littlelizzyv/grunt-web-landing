@@ -21,15 +21,15 @@ body {
   text-transform: uppercase;
   height: 110px;
   box-shadow: -6px 6px 30px rgba(0, 0, 0, 0.3); }
-  .nav .h1, .navbar .h1 {
+  .nav .nav-content, .navbar .nav-content {
     color: #f0553b;
     font-size: 24px;
     letter-spacing: 5px;
-    padding-top: 25px; }
+    padding-top: 40px;
+    display: block;
+    font-family: Helvetica, Arial, sans-serif; }
   .nav sup, .navbar sup {
     padding-top: 10px; }
-  .nav img, .navbar img {
-    float: left; }
 
 header.hero-container {
   display: block;
@@ -40,13 +40,17 @@ header.hero-container {
     width: 100%;
     max-width: 80%;
     margin: 0 auto 10px; }
+    header.hero-container .hero-img img {
+      width: 100%; }
   header.hero-container .hero-content {
     color: #f0553b;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 22px;
     text-align: center;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200; }
   header.hero-container hr.tnt-hr {
     border: 0;
     height: 2px;
@@ -94,7 +98,8 @@ header.hero-container {
       .main-content .content-block h1 .bandDate {
         font-family: "futura-pt-condensed";
         font-weight: 700;
-        color: #a6a4a4; }
+        color: #a6a4a4;
+        margin-right: 15px; }
       .main-content .content-block h1 .bandName {
         font-family: "futura-pt-condensed";
         font-weight: 400;
@@ -129,3 +134,51 @@ header.hero-container {
       .main-content .sponsor-block .sponsor .sponsor-logo {
         display: inline-block;
         margin: 20px; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%; } }
+
+@media (max-width: 1000px) {
+  .nav .nav-content, .navbar .nav-content {
+    font-size: 18px;
+    letter-spacing: 3px; } }
+
+@media (max-width: 630px) {
+  .nav .nav-content, .navbar .nav-content {
+    display: none !important; }
+  .nav .navbar-brand, .navbar .navbar-brand {
+    clear: both;
+    width: 100%; }
+    .nav .navbar-brand img, .navbar .navbar-brand img {
+      width: 120px;
+      margin: 0 auto 10px; } }
+
+@media (max-width: 600px) {
+  .main-content .content {
+    border-left: 0;
+    border-right: 0; } }
+
+@media (max-width: 480px) {
+  .main-content {
+    margin-top: -10px; }
+    .main-content .content {
+      width: 100%; }
+    .main-content .content-block h1 {
+      font-size: 50px; }
+      .main-content .content-block h1 span {
+        display: block;
+        text-align: center; }
+      .main-content .content-block h1 .bandDate {
+        margin-right: 0; }
+      .main-content .content-block h1 .bandName {
+        font-size: 45px; }
+    .main-content .gradient {
+      display: none; }
+  .container {
+    padding-left: 0;
+    padding-right: 0; }
+  header.hero-container {
+    box-shadow: inset 0px -70px 85px -40px #FFF; }
+    header.hero-container .hero-content {
+      font-size: 12px; } }
