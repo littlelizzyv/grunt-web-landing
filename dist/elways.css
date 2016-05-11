@@ -7,6 +7,11 @@ div {
   font-family: Helvetica, Arial, serif;
   color: #000; }
 
+/*
+font-family: 'FF DIN Pro Medium'
+font-family: 'FF DIN Pro Light'
+font-family: 'FF DIN Pro Bold'
+font-family: 'FF DIN OT'*/
 body {
   background-color: #d1ddbe; }
 
@@ -53,31 +58,48 @@ header.hero-container {
   width: 100%; }
   .main-content .gradient {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    margin-top: -10px;
     position: absolute;
-    box-shadow: inset 0px 60px 100px #d1ddbe; }
+    box-shadow: inset 0px 70px 100px #d1ddbe; }
   .main-content .content-container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
     background-color: #FFFFFF;
     z-index: 400;
     box-shadow: 0px 50px 40px 5px rgba(0, 0, 0, 0.3); }
+    .main-content .content-container .gradient-bottom {
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      vertical-align: bottom;
+      background-color: #d1ddbe;
+      box-shadow: -50px 0px 150px 150px #d1ddbe; }
   .main-content .content {
     width: calc(100% - 40px);
     margin: 10px auto 0;
-    height: 100vh;
+    height: 100%;
     border-left: 2px solid rgba(0, 0, 0, 0.4);
     border-right: 2px solid rgba(0, 0, 0, 0.4);
     padding-top: 50px; }
   .main-content .content-block {
     width: 92%;
-    margin: 0 auto; }
+    margin: 40px auto 100px; }
     .main-content .content-block h1 {
+      font-size: 55px;
       text-align: center;
-      font-size: 50px;
       text-transform: uppercase; }
+      .main-content .content-block h1 .bandDate {
+        font-family: "futura-pt-condensed";
+        font-weight: 700;
+        color: #a6a4a4; }
+      .main-content .content-block h1 .bandName {
+        font-family: "futura-pt-condensed";
+        font-weight: 400;
+        letter-spacing: 5px;
+        color: #444444; }
     .main-content .content-block hr.band-hr {
       border: 0;
       height: 2px;
@@ -91,3 +113,19 @@ header.hero-container {
       width: 100%;
       max-width: 200px;
       margin: 27px auto -67px; }
+  .main-content .sponsor-block {
+    width: 92%;
+    margin: 40px auto 100px; }
+    .main-content .sponsor-block .sponsor {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center; }
+      .main-content .sponsor-block .sponsor h4 {
+        color: #000;
+        font-size: 14px;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: bold; }
+      .main-content .sponsor-block .sponsor .sponsor-logo {
+        display: inline-block;
+        margin: 20px; }

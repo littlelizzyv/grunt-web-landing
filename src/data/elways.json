@@ -1,0 +1,74 @@
+{
+	"artist-info": [
+		{
+			"bandDate": "June15",
+			"bandName": "RailBenders",
+			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/63283728",
+			"rsvpUrl": "#"
+		},
+		{
+			"bandDate": "June 22",
+			"bandName": "Turner Jackson",
+			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225077305",
+			"rsvpUrl": "#"
+		},
+		{
+			"bandDate": "June 29",
+			"bandName": "Alex Maryol",
+			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89500619",
+			"rsvpUrl": "#"
+		},
+		{
+			"bandDate": "July 6",
+			"bandName": "THE LONG RUN",
+			"soundSrc": "#",
+			"rsvpUrl": "#"
+		},
+		{
+			"bandDate": "July 13",
+			"bandName": "THE SAMPLES",
+			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256544314",
+			"rsvpUrl": "#"
+		},
+		{
+			"bandDate": "July 20",
+			"bandName": "UNDER THE BLOOD RED SKY",
+			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11426592",
+			"rsvpUrl": "#"
+		},
+		{
+			"bandDate": "July 27",
+			"bandName": "JUDGE ROUGHNECK",
+			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/239444463",
+			"rsvpUrl": "#"
+		},
+		{
+			"bandDate": "August 3",
+			"bandName": "BAND OF HEATHENS",
+			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/59145244",
+			"rsvpUrl": "#"
+		},
+		{
+			"bandDate": "August 10",
+			"bandName": "THE BOURROUGHS",
+			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236973377",
+			"rsvpUrl": "#"
+		},
+		{
+			"bandDate": "August 17",
+			"bandName": "THAT EIGHTIES BAND",
+			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/90317699",
+			"rsvpUrl": "#"
+		}
+	],
+	"sponsors": [
+		{
+			"sponsor-img": "#",
+			"sponsor-url": "#"
+		},
+		{
+			"sponsor-img": "#",
+			"sponsor-url": "#"
+		}
+	]
+}
