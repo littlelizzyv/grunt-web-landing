@@ -80,6 +80,7 @@ header.hero-container {
 		.gradient-bottom {
 			width: 100%;
 			height: 1px;
+			margin-top: 50px;
 			position: absolute;
 			vertical-align: bottom;
 			background-color: #d1ddbe;
@@ -102,13 +103,13 @@ header.hero-container {
 			text-align: center;
 			text-transform: uppercase;
 			.bandDate {
-				font-family:"futura-pt-condensed";
+				font-family:"futura-pt-condensed", helvetica, arial, sans-serif;
 				font-weight: 700;
 				color: #a6a4a4;
 				margin-right: 15px;
 			}
 			.bandName {
-				font-family: "futura-pt-condensed";
+				font-family: "futura-pt-condensed", helvetica, arial, sans-serif;
 				font-weight: 400;
 				letter-spacing: 5px;
 				color: #444444;
@@ -140,15 +141,22 @@ header.hero-container {
 			margin: 0 auto;
 			text-align: center;
 			h4 {
+				font-family: helvetica, arial, sans-serif;
 				color: #000;
-				font-size: 14px;
+				font-size: 16px;
+				letter-spacing: 4px;
 				text-transform: uppercase;
 				display: inline-block;
-				font-weight: bold;
+				font-weight: 800;
+				vertical-align: middle;
+				margin-top: 0;
 			}
 			.sponsor-logo {
 				display: inline-block;
 				margin: 20px;
+			}
+			img {
+				vertical-align: baseline;
 			}
 		}
 	}
@@ -230,6 +238,17 @@ header.hero-container {
 		box-shadow: inset 0px -70px 85px -40px #FFF;
 		.hero-content {
 			font-size: 12px;
+		}
+	}
+	.sponsor-block {
+		.sponsor {
+			h4 {
+				display: block;
+				width: 100%;
+			}
+			.sponsor-logo {
+				display: inline-block;
+			}
 		}
 	}
 }

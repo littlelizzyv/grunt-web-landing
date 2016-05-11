@@ -63,11 +63,11 @@
 	],
 	"sponsors": [
 		{
-			"sponsor-img": "#",
+			"sponsor-img": "https://s3.amazonaws.com/elways/taste%26tunes/bacardi.png",
 			"sponsor-url": "#"
 		},
 		{
-			"sponsor-img": "#",
+			"sponsor-img": "https://s3.amazonaws.com/elways/taste%26tunes/greygoose.png",
 			"sponsor-url": "#"
 		}
 	]

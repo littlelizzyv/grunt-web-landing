@@ -77,6 +77,7 @@ header.hero-container {
     .main-content .content-container .gradient-bottom {
       width: 100%;
       height: 1px;
+      margin-top: 50px;
       position: absolute;
       vertical-align: bottom;
       background-color: #d1ddbe;
@@ -96,12 +97,12 @@ header.hero-container {
       text-align: center;
       text-transform: uppercase; }
       .main-content .content-block h1 .bandDate {
-        font-family: "futura-pt-condensed";
+        font-family: "futura-pt-condensed", helvetica, arial, sans-serif;
         font-weight: 700;
         color: #a6a4a4;
         margin-right: 15px; }
       .main-content .content-block h1 .bandName {
-        font-family: "futura-pt-condensed";
+        font-family: "futura-pt-condensed", helvetica, arial, sans-serif;
         font-weight: 400;
         letter-spacing: 5px;
         color: #444444; }
@@ -126,14 +127,20 @@ header.hero-container {
       margin: 0 auto;
       text-align: center; }
       .main-content .sponsor-block .sponsor h4 {
+        font-family: helvetica, arial, sans-serif;
         color: #000;
-        font-size: 14px;
+        font-size: 16px;
+        letter-spacing: 4px;
         text-transform: uppercase;
         display: inline-block;
-        font-weight: bold; }
+        font-weight: 800;
+        vertical-align: middle;
+        margin-top: 0; }
       .main-content .sponsor-block .sponsor .sponsor-logo {
         display: inline-block;
         margin: 20px; }
+      .main-content .sponsor-block .sponsor img {
+        vertical-align: baseline; }
 
 @media (min-width: 768px) {
   .container {
@@ -181,4 +188,9 @@ header.hero-container {
   header.hero-container {
     box-shadow: inset 0px -70px 85px -40px #FFF; }
     header.hero-container .hero-content {
-      font-size: 12px; } }
+      font-size: 12px; }
+  .sponsor-block .sponsor h4 {
+    display: block;
+    width: 100%; }
+  .sponsor-block .sponsor .sponsor-logo {
+    display: inline-block; } }
