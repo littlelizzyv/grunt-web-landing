@@ -65,6 +65,15 @@ module.exports = function(grunt) {
           base: 'dist',
           livereload: true
         }
+      },
+      livereload: {
+        options: {
+          open: true,
+          base: [
+            'dist'
+          ],
+          port: 9001
+        }
       }
     },
     watch: {
@@ -72,17 +81,9 @@ module.exports = function(grunt) {
         livereload: true
       },
       src: {
-        files: ['src/templates/**/*.hbs', 'data/*.json', 'css/scss/*', 'helpers/*.js', 'Gruntfile.js'],
-        tasks: ['clean', 'sass:dist', 'assemble', 'jshint']
-      },
-      css: {
-        files: ['src/css/scss/*.scss'],
-        tasks: ['sass:dist']
+        files: ['src/templates/**/*.hbs', 'data/*.json', 'src/css/scss/*.scss', 'helpers/*.js', 'Gruntfile.js'],
+        tasks: ['build']
       }
-    },
-    open: {
-      path: 'http://localhost:9001',
-      app: 'Google Chrome'
     }
   });
 
@@ -94,15 +95,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-open');
 
   // Default task to be run.
   grunt.registerTask('default', ['clean', 'sass:dist', 'assemble', 'jshint']);
   grunt.registerTask('build', ['clean', 'sass:dist', 'assemble', 'jshint']);
   grunt.registerTask('server', [
       'build',
-      'connect',
-      'watch',
-      'open',
+      'connect:livereload',
+      'watch'
     ]);
 };
