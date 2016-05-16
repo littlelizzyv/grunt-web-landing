@@ -2,26 +2,26 @@
 	"artist-info": [
 		{
 			"bandDate": "June15",
-			"bandName": "RailBenders",
+			"bandName": "RAILBENDERS",
 			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/63283728",
 			"rsvpUrl": "#"
 		},
 		{
 			"bandDate": "June 22",
-			"bandName": "Turner Jackson",
+			"bandName": "TURNER JACKSON",
 			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225077305",
 			"rsvpUrl": "#"
 		},
 		{
 			"bandDate": "June 29",
-			"bandName": "Alex Maryol",
+			"bandName": "ALEX MARYOL",
 			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89500619",
 			"rsvpUrl": "#"
 		},
 		{
 			"bandDate": "July 6",
 			"bandName": "THE LONG RUN",
-			"soundSrc": "#",
+			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/204507293",
 			"rsvpUrl": "#"
 		},
 		{
@@ -39,7 +39,7 @@
 		{
 			"bandDate": "July 27",
 			"bandName": "JUDGE ROUGHNECK",
-			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/239444463",
+			"soundSrc": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215218584",
 			"rsvpUrl": "#"
 		},
 		{
@@ -63,11 +63,11 @@
 	],
 	"sponsors": [
 		{
-			"sponsor-img": "https://s3.amazonaws.com/elways/taste%26tunes/bacardi.png",
+			"sponsor-img": "https://s3.amazonaws.com/elways/taste%26tunes/BACARDI-logo.png",
 			"sponsor-url": "#"
 		},
 		{
-			"sponsor-img": "https://s3.amazonaws.com/elways/taste%26tunes/greygoose.png",
+			"sponsor-img": "https://s3.amazonaws.com/elways/taste%26tunes/GREYGOOSE-logo.png",
 			"sponsor-url": "#"
 		}
 	]

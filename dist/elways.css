@@ -23,6 +23,10 @@ body {
     padding-top: 40px;
     display: block;
     font-family: Helvetica, Arial, sans-serif; }
+    .nav .nav-content span, .navbar .nav-content span {
+      font-size: 18px;
+      vertical-align: top;
+      margin-top: 2px; }
   .nav sup, .navbar sup {
     padding-top: 10px; }
 
@@ -40,12 +44,14 @@ header.hero-container {
   header.hero-container .hero-content {
     color: #f0553b;
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 26px;
     text-align: center;
     letter-spacing: 2px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 200; }
+    header.hero-container .hero-content .line-break {
+      display: block; }
   header.hero-container hr.tnt-hr {
     border: 0;
     height: 2px;
@@ -130,12 +136,15 @@ header.hero-container {
         display: inline-block;
         font-weight: 800;
         vertical-align: middle;
-        margin-top: 0; }
+        margin-top: 15px;
+        margin-right: 30px; }
       .main-content .sponsor-block .sponsor .sponsor-logo {
         display: inline-block;
-        margin: 20px; }
+        margin: 20px 30px;
+        vertical-align: middle; }
       .main-content .sponsor-block .sponsor img {
-        vertical-align: baseline; }
+        vertical-align: baseline;
+        max-width: 180px; }
 
 @media (min-width: 768px) {
   .container {
@@ -145,6 +154,13 @@ header.hero-container {
   .nav .nav-content, .navbar .nav-content {
     font-size: 18px;
     letter-spacing: 3px; } }
+
+@media (max-width: 688px) {
+  header.hero-container .hero-content .mobile-hidden {
+    display: none; }
+  header.hero-container .hero-content .mobile-break {
+    display: block;
+    width: 100%; } }
 
 @media (max-width: 630px) {
   .nav .nav-content, .navbar .nav-content {
@@ -183,6 +199,8 @@ header.hero-container {
   header.hero-container {
     box-shadow: inset 0px -70px 85px -40px #FFF; }
     header.hero-container .hero-content {
+      margin: 0;
+      padding: 0 20px;
       font-size: 12px; }
   .sponsor-block .sponsor h4 {
     display: block;

@@ -22,15 +22,16 @@ module.exports = function(grunt) {
         prettify: {indent: 2},
         marked: {sanitize: false},
         production: true,
-        data: 'src/**/*.{json,yml}',
+        data: 'src/data/*.{json,yml}',
         assets: '<%= site.destination %>/assets',
-        helpers: 'src/helpers/helper-*.js',
+        helpers: 'src/helpers/*.js',
+        scripts: 'src/scripts/*.js',
         layoutdir: 'src/templates/layouts',
         partials: ['src/templates/includes/**/*.hbs']
       },
       site: {
         // Target-level options
-        options: {layout: 'elways.hbs'},
+        options: {layout: 'elways.hbs'}, 
         files: [
           { expand: true, cwd: 'src/templates/pages', src: ['*.hbs'], dest: '<%= site.destination %>/' }
         ]
@@ -48,7 +49,7 @@ module.exports = function(grunt) {
       }, 
     },
     jshint: {
-      all: ['src/helpers/*.js']
+      all: ['src/helpers/*.js', 'src/scripts/*.js']
     },
 
     // Before generating any new files,
@@ -81,7 +82,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       src: {
-        files: ['src/templates/**/*.hbs', 'data/*.json', 'src/css/scss/*.scss', 'helpers/*.js', 'Gruntfile.js'],
+        files: ['src/templates/**/*.hbs', 'src/data/*.json', 'src/css/scss/*.scss', 'src/helpers/*.js', 'src/scripts/*.js', 'Gruntfile.js'],
         tasks: ['build']
       }
     }
