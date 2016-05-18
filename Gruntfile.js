@@ -25,7 +25,6 @@ module.exports = function(grunt) {
         data: 'src/data/*.{json,yml}',
         assets: '<%= site.destination %>/assets',
         helpers: 'src/helpers/*.js',
-        scripts: 'src/scripts/*.js',
         layoutdir: 'src/templates/layouts',
         partials: ['src/templates/includes/**/*.hbs']
       },
@@ -49,7 +48,7 @@ module.exports = function(grunt) {
       }, 
     },
     jshint: {
-      all: ['src/helpers/*.js', 'src/scripts/*.js']
+      all: ['src/helpers/*.js', 'src/apps/*.js']
     },
 
     // Before generating any new files,
@@ -57,7 +56,13 @@ module.exports = function(grunt) {
     clean: {
       all: 'dist'
     },
-
+    copy: {
+      main: {
+        expand: true,
+        src: 'src/apps/*.js',
+        dest: 'dist',
+      },
+    },
     connect: {
       server: {
         options: {
@@ -82,7 +87,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       src: {
-        files: ['src/templates/**/*.hbs', 'src/data/*.json', 'src/css/scss/*.scss', 'src/helpers/*.js', 'src/scripts/*.js', 'Gruntfile.js'],
+        files: ['src/templates/**/*.hbs', 'src/data/*.json', 'src/css/scss/*.scss', 'src/helpers/*.js', 'src/apps/*.js', 'Gruntfile.js'],
         tasks: ['build']
       }
     }
@@ -96,10 +101,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task to be run.
   grunt.registerTask('default', ['clean', 'sass:dist', 'assemble', 'jshint']);
-  grunt.registerTask('build', ['clean', 'sass:dist', 'assemble', 'jshint']);
+  grunt.registerTask('build', ['clean', 'sass:dist', 'assemble', 'jshint', 'copy']);
   grunt.registerTask('server', [
       'build',
       'connect:livereload',

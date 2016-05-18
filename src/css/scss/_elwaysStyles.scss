@@ -130,6 +130,17 @@ header.hero-container {
 			width: 80%;
 			margin: 0 auto;
 		}
+		.loading {
+			position: absolute;
+			left: 50%;
+			margin-top: 70px;
+			.fa {
+				color: #d3d3d3;
+				font-size: 30px;
+				margin: 0 auto;
+
+			}
+		}
 		.rsvp-button {
 			width: 100%;
 			max-width: 200px;

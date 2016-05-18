@@ -117,6 +117,14 @@ header.hero-container {
     .main-content .content-block .soundcloud-widget {
       width: 80%;
       margin: 0 auto; }
+    .main-content .content-block .loading {
+      position: absolute;
+      left: 50%;
+      margin-top: 70px; }
+      .main-content .content-block .loading .fa {
+        color: #d3d3d3;
+        font-size: 30px;
+        margin: 0 auto; }
     .main-content .content-block .rsvp-button {
       width: 100%;
       max-width: 200px;

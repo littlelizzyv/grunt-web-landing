@@ -2,9 +2,12 @@
 {{#each elways.artist-info}}
 <div class="content-block">
 	<h1 class="bandTitle"><span class="bandDate">{{ bandDate }}</span><span class="bandName">{{ bandName }}</span></h1>
-	<div class="soundcloud-widget">
-		<iframe width="100%" height="116" scrolling="no" frameborder="no" src="{{ soundSrc }}&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+	<div class="loading">
+			<i class="fa fa-spinner fa-spin"></i>
 	</div>
+	<div class="soundcloud-widget">
+		<iframe class="tntSC" width="100%" height="166" scrolling="no" frameborder="no" src="{{ soundSrc }}&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false" defer ></iframe>
+	</div> 
 	<div class="rsvp-button">
 		<div class="button-img">
 		<a href="{{ rsvpUrl }}" target="_blank"><img src="https://s3.amazonaws.com/elways/taste%26tunes/rsvpFacebook.png"></a>
