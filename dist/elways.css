@@ -22,11 +22,12 @@ body {
     letter-spacing: 5px;
     padding-top: 40px;
     display: block;
-    font-family: Helvetica, Arial, sans-serif; }
+    font-family: Helvetica, Arial, sans-serif;
+    vertical-align: top; }
     .nav .nav-content span, .navbar .nav-content span {
       font-size: 18px;
       vertical-align: top;
-      margin-top: 2px; }
+      line-height: 29px; }
   .nav sup, .navbar sup {
     padding-top: 10px; }
 
@@ -63,10 +64,10 @@ header.hero-container {
   width: 100%; }
   .main-content .gradient {
     width: 100%;
-    height: 100%;
+    height: 120px;
     margin-top: -10px;
     position: absolute;
-    box-shadow: inset 0px 70px 100px #d1ddbe; }
+    box-shadow: inset -15px 40px 60px 1px #d1ddbe; }
   .main-content .content-container {
     height: 100%;
     width: 100%;
@@ -127,33 +128,43 @@ header.hero-container {
       width: 100%;
       margin: 0 auto;
       text-align: center; }
-      .main-content .sponsor-block .sponsor h4 {
-        font-family: helvetica, arial, sans-serif;
-        color: #000;
-        font-size: 16px;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        display: inline-block;
-        font-weight: 800;
-        vertical-align: middle;
-        margin-top: 15px;
-        margin-right: 30px; }
-      .main-content .sponsor-block .sponsor .sponsor-logo {
-        display: inline-block;
-        margin: 20px 30px;
-        vertical-align: middle; }
-      .main-content .sponsor-block .sponsor img {
-        vertical-align: baseline;
-        max-width: 180px; }
+      .main-content .sponsor-block .sponsor .sponsor-component {
+        display: inline-block; }
+        .main-content .sponsor-block .sponsor .sponsor-component h4 {
+          font-family: helvetica, arial, sans-serif;
+          color: #000;
+          font-size: 16px;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          display: inline-block;
+          font-weight: 800;
+          vertical-align: middle;
+          margin-top: 15px;
+          margin-right: 30px; }
+        .main-content .sponsor-block .sponsor .sponsor-component .sponsor-logo {
+          display: inline-block;
+          margin: 20px 30px;
+          vertical-align: middle; }
+        .main-content .sponsor-block .sponsor .sponsor-component img {
+          vertical-align: baseline;
+          max-width: 180px; }
 
 @media (min-width: 768px) {
   .container {
     width: 90%; } }
 
+@media (max-width: 925px) {
+  .sponsor-block .sponsor .sponsor-component {
+    display: block; } }
+
 @media (max-width: 1000px) {
   .nav .nav-content, .navbar .nav-content {
     font-size: 18px;
-    letter-spacing: 3px; } }
+    letter-spacing: 3px; }
+    .nav .nav-content span, .navbar .nav-content span {
+      font-size: 14px;
+      vertical-align: top;
+      line-height: 23px; } }
 
 @media (max-width: 688px) {
   header.hero-container .hero-content .mobile-hidden {
