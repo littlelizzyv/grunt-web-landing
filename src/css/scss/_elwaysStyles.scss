@@ -145,6 +145,9 @@ header.hero-container {
 			width: 100%;
 			max-width: 200px;
 			margin: 27px auto -67px;
+			.mobile-img {
+				display: none;
+			}
 		}
 	}
 	.sponsor-block {
@@ -274,10 +277,20 @@ header.hero-container {
 					font-size: 45px;
 				}
 			}
+			.rsvp-button {
+				.desktop-img {
+					display: none;
+				}
+				.mobile-img {
+					display: inline-block;
+
+				}
+			}
 		}
 		.gradient {
 			display:none;
 		}
+		
 	}
 	.container {
 		padding-left: 0;

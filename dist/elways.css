@@ -129,6 +129,8 @@ header.hero-container {
       width: 100%;
       max-width: 200px;
       margin: 27px auto -67px; }
+      .main-content .content-block .rsvp-button .mobile-img {
+        display: none; }
   .main-content .sponsor-block {
     width: 92%;
     margin: 40px auto 100px; }
@@ -210,6 +212,10 @@ header.hero-container {
         margin-right: 0; }
       .main-content .content-block h1 .bandName {
         font-size: 45px; }
+    .main-content .content-block .rsvp-button .desktop-img {
+      display: none; }
+    .main-content .content-block .rsvp-button .mobile-img {
+      display: inline-block; }
     .main-content .gradient {
       display: none; }
   .container {

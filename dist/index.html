@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Elways</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="elways.css">
@@ -31,189 +31,57 @@
       <!-- body partial, used for adding pages to layout -->
       
 
+<h1 id="boilerplate-site-build-status-https-travis-ci-org-assemble-boilerplate-site-png-https-travis-ci-org-assemble-boilerplate-site-">boilerplate-site  <a href="https://travis-ci.org/assemble/boilerplate-site"><img src="https://travis-ci.org/assemble/boilerplate-site.png" alt="Build Status"></a></h1>
+<blockquote>
+<p>Boilerplate for generating a basic static site with Assemble.</p>
+</blockquote>
+<h3 id="notice-this-boilerplate-is-being-refactored">NOTICE: THIS BOILERPLATE IS BEING REFACTORED</h3>
+<p>You may find outdated information or examples in this project. While we&#39;re refactoring, you might be more interested in <a href="http://github.com/assemble/boilerplate-bootstrap">boilerplate-bootstrap</a> in the meantime.</p>
+<h2 id="getting-started">Getting Started</h2>
+<ul>
+<li><strong><a href="https://github.com/assemble/boilerplate-site/archive/master.zip">Download this project</a></strong> and unzip it into a new folder.</li>
+<li>In the project folder, run <code>npm install</code> to install <a href="https://github.com/assemble/assemble/">Assemble</a>, <a href="http://gruntjs.com/">Grunt</a> and any other dependencies.</li>
+<li>Once the dependencies are installed you may run <code>grunt assemble</code> to build the example project.</li>
+</ul>
+<p>If you haven&#39;t used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a>, as well as install and use Grunt plugins.</p>
+<h2 id="the-assemble-task">The &quot;assemble&quot; task</h2>
+<h3 id="overview">Overview</h3>
+<p>In the project&#39;s Gruntfile, the example <code>assemble</code> task is pre-loaded with paths and options following standard Grunt.js conventions:</p>
+<pre><code class="language-js">grunt.initConfig({
+  <span class="comment">// The "assemble" task</span>
+  assemble: {
+    <span class="comment">// Task-level options.</span>
+    options: {
+      flatten: <span class="literal">true</span>,
+      assets: <span class="string">'dist/assets'</span>,
+      layout: <span class="string">'templates/layouts/default.hbs'</span>,
+      partials: <span class="string">'templates/partials/*.hbs'</span>,
+      data: <span class="string">'src/data/*.{json,yml}'</span>
+    },
+    <span class="comment">// Templates to build into pages</span>
+    pages: {
+      files: {
+        <span class="string">'dist/'</span>: [<span class="string">'templates/pages/*.hbs'</span>]
+      }
+    }
+  }
+})</code></pre>
+<h2 id="boilerplate-author">Boilerplate Author</h2>
+<p><strong>Jon Schlinkert</strong></p>
+<ul>
+<li><a href="https://github.com/jonschlinkert">github/jonschlinkert</a></li>
+<li><a href="http://twitter.com/jonschlinkert">twitter/jonschlinkert</a></li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Use <a href="https://github.com/assemble/assemble/">Assemble</a> to build and maintain your gh-pages, blog or documentation. Lint and test your code using <a href="http://gruntjs.com/">Grunt</a>.</p>
 
-<header class="hero-container">
 
-<div class="hero-img">
-	<img src="https://s3.amazonaws.com/elways/taste%26tunes/tastetuneslogo.png" alt="Taste & Tunes" />
-</div>
-<div class="hero">
-	<p class="hero-content">
-	Elway’s Backyard opens at 5PM  
-	<br>
-	DJ Tanner spins from 5:30 – 6:30PM<span class="mobile-hidden">,</span> <span class="mobile-break">bands play from 7 – 9:30PM</span>
-	<span class="line-break">
-	Patio seating for parties up to 15
-	<br />
-	private tent accommodates groups of up to 50 people
-	</span>
-	</p>
-</div>
-<hr class="tnt-hr">
-</header>
-
-<div class="main-content">
-<div class="gradient"></div>
-	<div class="content-container">
-		<div class="content">
-			
-
-<div class="content-block">
-	<h1 class="bandTitle"><span class="bandDate">June15</span><span class="bandName">RAILBENDERS</span></h1>
-	<div class="soundcloud-widget">
-		<iframe width="100%" height="116" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/63283728&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-	</div>
-	<div class="rsvp-button">
-		<div class="button-img">
-		<a href="https://www.facebook.com/events/1580250555606583/" target="_blank"><img src="https://s3.amazonaws.com/elways/taste%26tunes/rsvpFacebook.png"></a>
-		</div>
-	</div>
-	<hr class="band-hr">
-</div>
-
-<div class="content-block">
-	<h1 class="bandTitle"><span class="bandDate">June 22</span><span class="bandName">TURNER JACKSON</span></h1>
-	<div class="soundcloud-widget">
-		<iframe width="100%" height="116" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225077305&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-	</div>
-	<div class="rsvp-button">
-		<div class="button-img">
-		<a href="https://www.facebook.com/events/800272446739689/" target="_blank"><img src="https://s3.amazonaws.com/elways/taste%26tunes/rsvpFacebook.png"></a>
-		</div>
-	</div>
-	<hr class="band-hr">
-</div>
-
-<div class="content-block">
-	<h1 class="bandTitle"><span class="bandDate">June 29</span><span class="bandName">ALEX MARYOL</span></h1>
-	<div class="soundcloud-widget">
-		<iframe width="100%" height="116" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89500619&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-	</div>
-	<div class="rsvp-button">
-		<div class="button-img">
-		<a href="https://www.facebook.com/events/232079500500568/" target="_blank"><img src="https://s3.amazonaws.com/elways/taste%26tunes/rsvpFacebook.png"></a>
-		</div>
-	</div>
-	<hr class="band-hr">
-</div>
-
-<div class="content-block">
-	<h1 class="bandTitle"><span class="bandDate">July 6</span><span class="bandName">THE LONG RUN</span></h1>
-	<div class="soundcloud-widget">
-		<iframe width="100%" height="116" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/204507293&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-	</div>
-	<div class="rsvp-button">
-		<div class="button-img">
-		<a href="https://www.facebook.com/events/1008807009234042/" target="_blank"><img src="https://s3.amazonaws.com/elways/taste%26tunes/rsvpFacebook.png"></a>
-		</div>
-	</div>
-	<hr class="band-hr">
-</div>
-
-<div class="content-block">
-	<h1 class="bandTitle"><span class="bandDate">July 13</span><span class="bandName">THE SAMPLES</span></h1>
-	<div class="soundcloud-widget">
-		<iframe width="100%" height="116" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256544314&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-	</div>
-	<div class="rsvp-button">
-		<div class="button-img">
-		<a href="https://www.facebook.com/events/130027387402129/" target="_blank"><img src="https://s3.amazonaws.com/elways/taste%26tunes/rsvpFacebook.png"></a>
-		</div>
-	</div>
-	<hr class="band-hr">
-</div>
-
-<div class="content-block">
-	<h1 class="bandTitle"><span class="bandDate">July 20</span><span class="bandName">UNDER A BLOOD RED SKY</span></h1>
-	<div class="soundcloud-widget">
-		<iframe width="100%" height="116" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11426592&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-	</div>
-	<div class="rsvp-button">
-		<div class="button-img">
-		<a href="https://www.facebook.com/events/1596172807377477/" target="_blank"><img src="https://s3.amazonaws.com/elways/taste%26tunes/rsvpFacebook.png"></a>
-		</div>
-	</div>
-	<hr class="band-hr">
-</div>
-
-<div class="content-block">
-	<h1 class="bandTitle"><span class="bandDate">July 27</span><span class="bandName">JUDGE ROUGHNECK</span></h1>
-	<div class="soundcloud-widget">
-		<iframe width="100%" height="116" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215218584&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-	</div>
-	<div class="rsvp-button">
-		<div class="button-img">
-		<a href="https://www.facebook.com/events/705450696224009/" target="_blank"><img src="https://s3.amazonaws.com/elways/taste%26tunes/rsvpFacebook.png"></a>
-		</div>
-	</div>
-	<hr class="band-hr">
-</div>
-
-<div class="content-block">
-	<h1 class="bandTitle"><span class="bandDate">August 3</span><span class="bandName">BAND OF HEATHENS</span></h1>
-	<div class="soundcloud-widget">
-		<iframe width="100%" height="116" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/59145244&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-	</div>
-	<div class="rsvp-button">
-		<div class="button-img">
-		<a href="https://www.facebook.com/events/129680430778162/" target="_blank"><img src="https://s3.amazonaws.com/elways/taste%26tunes/rsvpFacebook.png"></a>
-		</div>
-	</div>
-	<hr class="band-hr">
-</div>
-
-<div class="content-block">
-	<h1 class="bandTitle"><span class="bandDate">August 10</span><span class="bandName">THE BOURROUGHS</span></h1>
-	<div class="soundcloud-widget">
-		<iframe width="100%" height="116" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236973377&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-	</div>
-	<div class="rsvp-button">
-		<div class="button-img">
-		<a href="https://www.facebook.com/events/1711243402461130/" target="_blank"><img src="https://s3.amazonaws.com/elways/taste%26tunes/rsvpFacebook.png"></a>
-		</div>
-	</div>
-	<hr class="band-hr">
-</div>
-
-<div class="content-block">
-	<h1 class="bandTitle"><span class="bandDate">August 17</span><span class="bandName">THAT EIGHTIES BAND</span></h1>
-	<div class="soundcloud-widget">
-		<iframe width="100%" height="116" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/90317699&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-	</div>
-	<div class="rsvp-button">
-		<div class="button-img">
-		<a href="https://www.facebook.com/events/517268141798241/" target="_blank"><img src="https://s3.amazonaws.com/elways/taste%26tunes/rsvpFacebook.png"></a>
-		</div>
-	</div>
-	<hr class="band-hr">
-</div>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/63283728&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 
 
 
-<div class="sponsor-block">
-	<div class="sponsor">
-		<div class="sponsor-component">
-			<h4>Sponsored By</h4>
-		</div>
-		<div class="sponsor-component">
-			
-			<div class="sponsor-logo">
-				<a href="#"><img src="https://s3.amazonaws.com/elways/taste%26tunes/BACARDI-logo.png"></a>
-			</div>
-			
-			<div class="sponsor-logo">
-				<a href="#"><img src="https://s3.amazonaws.com/elways/taste%26tunes/GREYGOOSE-logo.png"></a>
-			</div>
-			
-		</div>
-	</div> 
-</div>
 
 
-		</div>
-	<div class="gradient-bottom"></div>
-	</div>
-</div>
 
     </div>
   <script>
