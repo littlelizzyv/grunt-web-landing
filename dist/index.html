@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta property="og:url" content="http://tasteandtunes.com/" />
+    <meta property="og:title" content="Elway's 12th Annual Summer Music Series: Taste & Tunes" />
+    <meta property="og:image" content="https://s3.amazonaws.com/elways/taste%26tunes/ELW_tat_micrositeFBshare.png" />
+    <meta property="og:description" content="Elway's Backyard opens at 5PM, DJ Tanner spins from 5:30 – 6:30PM, Bands play from 7 – 9:30PM" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="elways.css">
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://use.typekit.net/lpy1drg.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="/src/apps/animations.js"></script>
+  </head>
+  <body>
+    <!-- nav partial -->
+    <div class="nav navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="navbar-brand" href="http://www.elways.com/Reservations"><img src="https://s3.amazonaws.com/elways/taste%26tunes/elwayslogo.png"></a>
+      <div class="nav-content">12<span>th</span> Annual Summer Music Series</div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container">
+      <!-- body partial, used for adding pages to layout -->
+      
+
+<h1 id="boilerplate-site-build-status-https-travis-ci-org-assemble-boilerplate-site-png-https-travis-ci-org-assemble-boilerplate-site-">boilerplate-site  <a href="https://travis-ci.org/assemble/boilerplate-site"><img src="https://travis-ci.org/assemble/boilerplate-site.png" alt="Build Status"></a></h1>
+<blockquote>
+<p>Boilerplate for generating a basic static site with Assemble.</p>
+</blockquote>
+<h3 id="notice-this-boilerplate-is-being-refactored">NOTICE: THIS BOILERPLATE IS BEING REFACTORED</h3>
+<p>You may find outdated information or examples in this project. While we&#39;re refactoring, you might be more interested in <a href="http://github.com/assemble/boilerplate-bootstrap">boilerplate-bootstrap</a> in the meantime.</p>
+<h2 id="getting-started">Getting Started</h2>
+<ul>
+<li><strong><a href="https://github.com/assemble/boilerplate-site/archive/master.zip">Download this project</a></strong> and unzip it into a new folder.</li>
+<li>In the project folder, run <code>npm install</code> to install <a href="https://github.com/assemble/assemble/">Assemble</a>, <a href="http://gruntjs.com/">Grunt</a> and any other dependencies.</li>
+<li>Once the dependencies are installed you may run <code>grunt assemble</code> to build the example project.</li>
+</ul>
+<p>If you haven&#39;t used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a>, as well as install and use Grunt plugins.</p>
+<h2 id="the-assemble-task">The &quot;assemble&quot; task</h2>
+<h3 id="overview">Overview</h3>
+<p>In the project&#39;s Gruntfile, the example <code>assemble</code> task is pre-loaded with paths and options following standard Grunt.js conventions:</p>
+<pre><code class="language-js">grunt.initConfig({
+  <span class="comment">// The "assemble" task</span>
+  assemble: {
+    <span class="comment">// Task-level options.</span>
+    options: {
+      flatten: <span class="literal">true</span>,
+      assets: <span class="string">'dist/assets'</span>,
+      layout: <span class="string">'templates/layouts/default.hbs'</span>,
+      partials: <span class="string">'templates/partials/*.hbs'</span>,
+      data: <span class="string">'src/data/*.{json,yml}'</span>
+    },
+    <span class="comment">// Templates to build into pages</span>
+    pages: {
+      files: {
+        <span class="string">'dist/'</span>: [<span class="string">'templates/pages/*.hbs'</span>]
+      }
+    }
+  }
+})</code></pre>
+<h2 id="boilerplate-author">Boilerplate Author</h2>
+<p><strong>Jon Schlinkert</strong></p>
+<ul>
+<li><a href="https://github.com/jonschlinkert">github/jonschlinkert</a></li>
+<li><a href="http://twitter.com/jonschlinkert">twitter/jonschlinkert</a></li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Use <a href="https://github.com/assemble/assemble/">Assemble</a> to build and maintain your gh-pages, blog or documentation. Lint and test your code using <a href="http://gruntjs.com/">Grunt</a>.</p>
+
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/63283728&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+
+
+
+
+
+    </div>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-77298165-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script>
+  </body>
+</html>

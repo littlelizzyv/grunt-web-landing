@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ title }}</title>
+    <title>Markdown</title>
     <meta property="og:url" content="http://tasteandtunes.com/" />
     <meta property="og:title" content="Elway's 12th Annual Summer Music Series: Taste & Tunes" />
     <meta property="og:image" content="https://s3.amazonaws.com/elways/taste%26tunes/ELW_tat_micrositeFBshare.png" />
@@ -21,11 +21,45 @@
   </head>
   <body>
     <!-- nav partial -->
-    {{> nav }}
+    <div class="nav navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="navbar-brand" href="http://www.elways.com/Reservations"><img src="https://s3.amazonaws.com/elways/taste%26tunes/elwayslogo.png"></a>
+      <div class="nav-content">12<span>th</span> Annual Summer Music Series</div>
+    </div>
+  </div>
+</div>
+
 
     <div class="container">
       <!-- body partial, used for adding pages to layout -->
-      {{> body }}
+      
+<div class="page-header">
+  <h1>Markdown</h1>
+</div>
+
+
+
+
+<p>You&#x27;re looking at inline markdown content, wrapped with handlebars (mustache) tags!</p>
+<p>Behold... some examples:</p>
+<h1 id="heading-1">Heading 1</h1>
+<h2 id="heading-2">Heading 2</h2>
+<h3 id="heading-3">Heading 3</h3>
+<h4 id="heading-4">Heading 4</h4>
+<h5 id="heading-5">Heading 5</h5>
+<h6 id="heading-6">Heading 6</h6>
+<p><em>italic words</em></p>
+<p><strong>bold words</strong></p>
+<ol>
+<li>First ordered list item</li>
+<li>Second item</li>
+<li>Third Item</li>
+</ol>
+<p>Finally, end a line with two or more spaces to do a manual line break.</p>
+
+
+
 
     </div>
   <script>
